@@ -1,0 +1,13 @@
+/******************************************************************************
+ * File: admin.css 
+ * 
+ * MoneyPress : CafePress LE admin pages stylesheet.
+ *
+ ******************************************************************************/
+p.productbox_lvl2 {
+    background: none repeat scroll 0 0 #F4F4F4;
+    border: 1px solid #888888;
+    margin-left: 30px;
+    padding: 3px;
+    width: 405px;
+}
