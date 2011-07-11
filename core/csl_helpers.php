@@ -30,7 +30,7 @@ function csl_mpcafe_setup_admin_interface() {
     if (isset($MP_cafepress_plugin->settings->sections['How to Use'])) { return; }    
     
     // No SimpleXML Support
-    if (!function_exists('parsetoxml')) {
+    if (!function_exists('simplexml_load_string')) {
         $MP_cafepress_plugin->notifications->add_notice(1, __('SimpleXML is required but not enabled.',MP_CAFEPRESS_PREFIX));
     }    
     

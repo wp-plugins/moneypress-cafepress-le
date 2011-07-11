@@ -5,7 +5,7 @@ Donate link: http://www.cybersprocket.com/products/wpquickcafepress/
 Tags: plugin,post,page,cafepress,affiliate,shirts,pod,print-on-demand,store,products,ecommerce,revenue sharing,storefront,cj,commission-junction
 Requires at least: 2.6
 Tested up to: 3.2
-Stable tag: 3.51
+Stable tag: 3.53
 
 Display CafePress products on your pages and posts with a simple short code. Affiliate enabled.  This is our FREE light edition (LE) release.
 
@@ -14,6 +14,12 @@ Display CafePress products on your pages and posts with a simple short code. Aff
 This plugin allows you to quickly and easily display products from CafePress on any page or post via a simple shortcode.  Install the plugin and you can add products to your existing blog posts or pages just be entering a shortcode. Multiple configuration options allow you to customize the display.  If you are a CafePress retailer, this plugin is for you!
 
 Note: This is our light edition (LE) product which is free with no license or license keys required.  The standard edition product, MoneyPress : CafePress Edition version 4 is in development and will be out soon.  You can learn more about at the [MoneyPress CafePress Edition](http://www.cybersprocket.com/products/wpquickcafepress/) product page.
+
+= Features =
+
+* Uses your own API key.
+* No revenue sharing, you keep 100% of your sales.
+* Built in affiliate tracking for Commission Junction affiliates.
 
 = Want More? Try Our Standard Edition =
 
@@ -25,12 +31,6 @@ Some of the features in the standard edition that are not found in the LE versio
 * [More Settings](http://redmine.cybersprocket.com/projects/wpcafepress/wiki/Setttings) : You can now set which product lookup method is used to retrieve listings from CafePress.
 * Bug Fixes: Latest bug fixes come out on the standard edition first, LE is 2-4 weeks behind.
 
-
-= Features =
-
-* Uses your own API key.
-* No revenue sharing, you keep 100% of your sales.
-* Built in affiliate tracking for Commission Junction affiliates.
 
 = We Can Customize This Plugin For You! =
 
@@ -56,7 +56,7 @@ Learn more at: http://www.cybersprocket.com/services/wordpress-developers/
 
 = How To Install =
 
-The best way to install and update is to search "MoneyPress CafePress Edition" in WordPress and install or update from there.
+The best way to install and update is to search "MoneyPress CafePress LE" in WordPress and install or update from there.
 
 To do it manually:
 
@@ -80,9 +80,16 @@ is easier than setting up your original CafePress store.
 
 = What type of support do I get? =
 
-Cyber Sprocket Labs provides online forums where you can post questions.  The
-developers read the forums on a regular basis.   Most inquiries are responded
-to within 7 days.
+Our light edition (LE) plugins are unsupported.   Paid support options are
+available.  Support rates are $120/hour prepaid.
+
+= Will you customize the plugin for me? =
+
+If you want a modification and need it in a hurry, contact us for a quote on
+getting this done.  Any work we can re-use and share with the communinty as
+part of main plugin can usually be completed in a few weeks.  We charge $60/hr
+for this work with most projects running 6-10 hours.    If you want a private
+modification we charge $120/hr for the work.
 
 = Who Is Cyber Sprocket Labs? =
 
@@ -109,6 +116,10 @@ us for a quote.
 
 
 == Changelog ==
+
+= v3.53 (July 11th 2011) = 
+
+* Fixed bug in SimpleXML check.
 
 = v3.51 (July 2011) =
 
