@@ -11,6 +11,7 @@ if (defined('MP_CAFEPRESS_PLUGINDIR')) {
         require_once(MP_CAFEPRESS_PLUGINDIR.'WPCSL-generic/classes/CSL-plugin.php');
     }
     
+    global $MP_cafepress_plugin;
     $MP_cafepress_plugin = new wpCSL_plugin__mpcafe(
         array(
             'use_obj_defaults'      => true,        
