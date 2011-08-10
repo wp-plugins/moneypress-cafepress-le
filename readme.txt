@@ -4,8 +4,8 @@ Contributors: cybersprocket
 Donate link: http://www.cybersprocket.com/products/wpquickcafepress/
 Tags: plugin,post,page,cafepress,affiliate,shirts,pod,print-on-demand,store,products,ecommerce,revenue sharing,storefront,cj,commission-junction
 Requires at least: 2.6
-Tested up to: 3.2
-Stable tag: 3.54
+Tested up to: 3.2.1
+Stable tag: 3.56
 
 Display CafePress products on your pages and posts with a simple short code. Affiliate enabled.  This is our FREE light edition (LE) release.
 
@@ -116,6 +116,16 @@ us for a quote.
 
 
 == Changelog ==
+
+= v3.56 (August 2011) =
+
+* Elminate errors on servers with exec() disabled on php.
+
+= v3.55 (July 14th 2011) = 
+
+* New zoom icon on product display output.
+* Added div and html layout structure for easier custom CSS work.
+* Update admin interface icons / cleanup on UI.
 
 = v3.54 (July 11th 2011) = 
 

@@ -40,7 +40,8 @@ class wpCSL_products__mpcafe {
      */
     function display_products($products) {
         $product_output[] = '';
-        $moneyFormat = get_option($this->css_prefix.'-money_format');
+        $moneyFormat = get_option($this->prefix.'-money_format');
+        $linkModifiers = get_option($this->prefix.'-link_modifiers');
         $currCol = 0;        
         foreach ($products as $product) {
             
@@ -53,22 +54,24 @@ class wpCSL_products__mpcafe {
             $product_output[] = "<div class=\"{$this->css_prefix}-product\">";
             $product_output[] = "<h3>{$product->name}</h3>";
             $product_output[] = "<div class=\"{$this->css_prefix}-left\">";
-            $product_output[] = "<a href=\"{$product->web_urls[0]}\" target=\"newinfo\">";
+            $product_output[] = "<a href=\"{$product->web_urls[0]}\" target=\"cyber-sprocket-labs\" $linkModifiers>";
             $product_output[] = "<img src=\"{$product->image_urls[0]}\" alt=\"{$product->name}\" title=\"{$product->name}\" />";
             $product_output[] = '</a><br/>';
-            $product_output[] = '<a class="thickbox" href="'.$product->image_urls[0].'">+zoom</a>';
+            $product_output[] = '<div class="'.$this->css_prefix.'-zoombox">';
+            $product_output[] = '<a class="thickbox" href="'.$product->image_urls[0].'">&nbsp;</a>';
+            $product_output[] = '</div>';
             $product_output[] = '</div>';
             $product_output[] = '<div class="'.$this->css_prefix . '-right">';
             $product_output[] = '<p class="' . $this->css_prefix . '-desc" >'.$product->description.'</p>';
             $product_output[] = '<p class="' . $this->css_prefix . '-price">'.$product->currency;
             if (function_exists('money_format') &&  ($moneyFormat != '')) {
                 $product_output[] =
-                    "$<a href=\"{$product->web_urls[0]}\" target=\"newinfo\">".
+                    "$<a href=\"{$product->web_urls[0]}\" target=\"cyber-sprocket-labs\" $linkModifiers>".
                     trim(money_format($moneyFormat, (float)$product->price)) .
                     '</a>';
             } else {
                 $product_output[] =
-                    "$<a href=\"{$product->web_urls[0]}\" target=\"newinfo\">".
+                    "$<a href=\"{$product->web_urls[0]}\" target=\"cyber-sprocket-labs\">".
                     trim(number_format((float)$product->price, 2)) .
                     '</a>';
             }

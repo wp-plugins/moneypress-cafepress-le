@@ -19,6 +19,8 @@ if (defined('MP_CAFEPRESS_PLUGINDIR')) {
             'css_prefix'            => 'csl_themes',            
             'name'                  => 'MoneyPress : CafePress LE',
             'url'                   => 'http://www.cybersprocket.com/products/wpquickcafepress/',
+            'support_url'           => 'http://redmine.cybersprocket.com/projects/wpcafepress/wiki',
+            'purchase_url'          => 'http://www.cybersprocket.com/products/wpquickcafepress/',            
             'basefile'              => MP_CAFEPRESS_BASENAME,
             'plugin_path'           => MP_CAFEPRESS_PLUGINDIR,
             'plugin_url'            => MP_CAFEPRESS_PLUGINURL,

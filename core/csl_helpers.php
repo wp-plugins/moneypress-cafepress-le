@@ -191,17 +191,8 @@ function csl_mpcafe_admin_stylesheet() {
  ** Add the user stylesheets to user pages.
  **/
 function csl_mpcafe_user_stylesheet() {
-    $theme = get_option(MP_CAFEPRESS_PREFIX.'-theme');
-    if ($theme == '') { $theme='mp-cafepress'; }
-    $themeFile = "css/$theme.css";
-    
-    if ( file_exists(MP_CAFEPRESS_COREDIR.$themeFile)) {
-        wp_register_style('csl_mpcafe_user_css', MP_CAFEPRESS_COREURL .$themeFile); 
-        wp_enqueue_style ('csl_mpcafe_user_css');
-        if (function_exists('csl_mpcafe_configure_theme')) {
-            csl_mpcafe_configure_theme($themeFile);
-        }
-    }
+    global $MP_cafepress_plugin;
+    $MP_cafepress_plugin->themes->assign_user_stylesheet();
 }
 
 
